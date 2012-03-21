@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 4,5,6</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/Mixin.js" type="text/javascript"></script>
+        <script src="js/MovieObserver.js" type="text/javascript"></script>
+        <script src="js/Movie.js" type="text/javascript"></script>
+        <script src="js/DownloadableMovie.js" type="text/javascript"></script>       
+    </head>    
+    <body>       
+         <script>
+            
+            var rocky_IV = new Movie();        
+            
+            rocky_IV.setTitle('ROCKY_IV');
+            rocky_IV.setRating('10');
+            rocky_IV.setId('10231');  
+            console.log('New movie ' + rocky_IV.getTitle());    
+            
+            var observador = new MovieObserver();            
+            rocky_IV.play();
+            rocky_IV.stop();
+            
+            var xmen = new DownloadableMovie();             
+            xmen.setTitle('X-Men');
+            xmen.setRating('6.5');
+            xmen.setId('10999');   
+            console.log('New movie ' + xmen.getTitle()); 
+            
+            xmen.download();
+
+            var ironman2 = new Movie();
+            ironman2.setTitle('Iron Man 2');
+            ironman2.setRating('9.5');
+            ironman2.setId('12345');  
+            console.log('New movie ' + ironman2.getTitle()); 
+            
+            ironman2.share('V. Rivas');         
+            ironman2.like();
+        </script>
+    </body>
+</html>
