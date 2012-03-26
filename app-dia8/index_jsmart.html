@@ -1,0 +1,31 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 8 - Engine Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="javascript" src="js/jsmart/smart-2.7.min.js"></script>        
+    </head>
+    <body>  
+        <h1>Template JsMart</h1>
+        <script src="js/jsmart/data_jsmart.js"></script>  
+        <script id="test_tpl" type="text/x-jsmart-tmpl">    
+            {foreach $dataList as $i => $data}
+            <div>
+                <h2>{$data.first_name} {$data.last_name} </h2>
+                {$data.age}
+                {$data.city} <br></br>
+                {$data.education} <br></br>
+                {$data.professional_experience} <br></br>
+                {$data.goals} <br></br>
+                {$data.specialties} <br></br> <br></br>         
+            </div>    
+        {/foreach}
+        </script>
+        
+    <script src="js/jsmart/main_jsmart.js"></script>        
+     </body>
+</html>
