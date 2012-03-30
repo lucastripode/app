@@ -1,0 +1,106 @@
+/* 
+    Document   : default
+    Created on : DATE
+    Author     : Lucas
+    Description:
+        CSS3 playground
+*/
+root { 
+    /*display: inline;*/
+}
+
+.una_column {
+	-moz-column-count: 1;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 20px;
+	column-count: 1;
+	column-gap: 20px;
+}
+
+.tres_columnas {
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;  
+}
+
+.cuatro_columnas {
+	-moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;;
+}
+
+.imagen{
+    width: 50px;
+    height: 50px; 
+}
+
+.imagen_pequeña{
+    width: 20px;
+    height: 20px; 
+}
+.imagen_grande{
+    width: 150px;
+    height: 150px; 
+}
+.imagen_oculta{
+    display:none;
+}
+
+.cambiar{
+    text-decoration: none;
+    color:black;
+}
+
+.cambiar:hover{
+    text-decoration: underline;
+    color:red;
+    font-size: 20px;
+}
+ul{
+    list-style-type:none;
+    margin:10px;
+    padding:0;
+}
+
+#menu li.line {  
+    border-bottom: 2px solid black; 
+    width:50px; 
+}
+#menu li.line_left {  
+   /* border-bottom: 2px solid black; 
+    border-left: 2px solid black; 
+    width:50px; */
+}
+
+#menu li.line_right {  
+    /*border-right: 2px solid black; 
+    width:50px; */
+}
+.mainContent article{
+    text-shadow: #6374AB 20px -12px 2px; 
+}
+
+.hiOne { background:red; }
+.hiTwo {background:yellow; }
+.hiThree { background:green; }
+.hi { background:gray; }
+.One { background:aqua; }
+
+p a{
+    text-decoration: underline;
+    color:red;
+    font-size: 20px;
+}
+.mainContent header {
+-webkit-transform: rotate(-2deg); 
+-moz-transform: rotate(-2deg);
+transform: rotate(-2deg);	
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
