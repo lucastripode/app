@@ -1,0 +1,162 @@
+/* 
+    Document   : default
+    Created on : Oct 19, 2011, 8:41:43 PM
+    Author     : Alberto Miranda <alberto@nextive.com>
+    Description:
+        Default styles for HTML Tests
+*/
+
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: normal;
+  /*src: local('Arvo'), url('http://themes.googleusercontent.com/font?kit=vvWPwz-PlZEwjOOIKqoZzA') format('truetype');*/
+}
+
+body{
+    font:normal normal normal 12px arial;
+    background:#555;
+}
+
+h1{
+    font:normal normal normal 34px arvo;
+    background: dodgerblue;
+    padding:4px;
+    border-radius:10px;
+}
+
+h1 .title{
+    
+}
+
+h1 .subtitle{
+    font-size:28px;
+    color:white;
+}
+
+nav{
+    background:cadetblue;
+    padding:5px;
+    font:normal normal normal 18px arvo;
+    border-radius:10px;
+}
+
+a{
+    color:black;
+    background:lightgrey;
+    display:block;
+    padding:10px 15px;
+    margin:2px;
+    text-decoration:none;
+    border-top:1px solid #eee;
+    border-bottom:1px solid gray;
+    border-radius:10px;
+}
+
+a:hover{
+    color:white;
+    background:cornflowerblue;
+}
+
+footer{
+    margin:40px 0 0 0;
+    background:black;
+    color:gray;
+    padding:10px;
+    border-radius:10px;
+    font-size:11px;
+}
+
+footer div:first-child{
+    color:yellow;
+    font:normal normal normal 14px arvo;
+}
+
+footer a{
+    padding:0 2px;
+    margin:0;
+    border:none;
+    background:none;
+    display:inline;
+    color:#eee;
+}
+
+.codeBox{
+    background:black;
+    color:yellow;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    margin: 3px 0;
+}
+
+.code{
+    width:100%;
+    background:black;
+    color:yellow;
+    border:none;
+}
+
+/*MIO*/
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+  width: 150px;
+  border: 3px dashed #999;
+  background: #eee;
+  padding: 10px;
+  display: block;
+}
+
+*[draggable=true] {
+  -moz-user-select:none;
+  -khtml-user-drag: element;
+  cursor: move;
+}
+
+*:-khtml-drag {
+  background-color: rgba(238,238,238, 0.5);
+}
+
+li a:hover:after {
+  content: ' (drag me)';
+}
+
+li.over {
+  border-color: #333;
+  background: #ccc;
+}
+
+#bin {
+  /*background: url(images/bin.jpg) top right no-repeat;*/
+  /*height: 250px;
+  width: 166px;
+  float: left;
+  border: 5px solid #000;
+  position: relative;
+  margin-top: 0;*/
+}
+
+#bin.over {
+ /* background: url(images/bin.jpg) top left no-repeat;*/
+}
+
+#bin p {
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 166px;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: #000 2px 2px 2px;
+}
+
+.web{
+  width: 130px;  
+}
