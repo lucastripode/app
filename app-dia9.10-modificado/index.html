@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dia 9.10 - MVC & Mixins</title>
+  <link rel="stylesheet" href="css/todos.css"/>
+</head>
+
+<body>
+  
+  <div id="todoapp">    
+    <header>
+      <h1>Peliculas</h1>
+      Title: <input id="new-todotitle" type="text" placeholder="title">
+      Rating: <input id="new-todorating" type="text" placeholder="rating">
+      Id: <input id="new-todoident" type="text" placeholder="ident">
+    </header>
+
+    <section id="main">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Marcar todos</label>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <footer>
+      <a id="clear-completed">Clear completed</a>
+      <div id="todo-count"></div>
+    </footer>    
+  </div>
+  
+  <script src="js/json2.js"></script>
+  <script src="js/jquery-1.7.1.js"></script>
+  <script src="js/underscore-1.3.1.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/backbone-localstorage.js"></script>
+  <script src="js/todos.js"></script>
+
+<!-- Templates -->
+
+  <script type="text/template" id="item-template">
+    <div class="view">
+      <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+      Title: <label><%= title %></label>
+      Rating: <label><%= rating %></label>
+      Id:<label><%= ident %></label>
+      <a class="destroy"></a>
+    </div>
+    <input class="edit" name="title" type="text" value="<%= title %>" />
+    <input class="editrating" name="rating" type="text" value="<%= rating %>" />
+    <input class="editident" name="ident" type="text" value="<%= ident %>" /> 
+  </script>
+  <script type="text/template" id="stats-template">
+    <% if (done) { %>
+      <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+  </body>
+</html>
