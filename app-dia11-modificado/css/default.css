@@ -1,0 +1,117 @@
+/* 
+    Document   : default
+    Created on : DATE
+    Author     : Lucas
+    Description:
+        CSS3 playground
+*/
+root { 
+    /*display: inline;*/
+}
+
+
+
+@media screen and (max-width: 800px){
+    #columnas{
+        -moz-column-count: 1;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 20px;
+	column-count: 1;
+	column-gap: 20px;
+        }
+    #imagen1{
+        width: 150px;
+        height: 150px; 
+        }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    #columnas{
+        -moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px; 
+        }
+    #imagen1{
+        width: 20px;
+        height: 20px; 
+        }    
+}
+
+@media screen and (min-width: 1200px){
+    #columnas{
+        -moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;
+        }
+    #imagen1{
+        width: 50px;
+        height: 50px; 
+        }
+}
+
+
+.cambiar{
+    text-decoration: none;
+    color:black;
+}
+
+.cambiar:hover{
+    text-decoration: underline;
+    color:red;
+    font-size: 20px;
+}
+ul{
+    list-style-type:none;
+    margin:10px;
+    padding:0;
+}
+
+#menu li.line {  
+    border-bottom: 2px solid black; 
+    width:50px; 
+}
+#menu li.line_left {  
+   /* border-bottom: 2px solid black; 
+    border-left: 2px solid black; 
+    width:50px; */
+}
+
+#menu li.line_right {  
+    /*border-right: 2px solid black; 
+    width:50px; */
+}
+
+
+span.hiOne { background:red; } /*5e*/
+span.hiTwo {background:yellow; }/*5e*/
+span.hiThree { background:green; }/*5e*/
+span[class^='hi'] { background:gray; }/*5f*/
+span[class$='One'] { background:aqua; }/*5g*/
+span[class] { background:yellowgreen; }/*5h*/
+
+article a:nth-of-type(1),a:nth-of-type(2){ /*5i*/
+    text-decoration: underline;
+    color:red;
+    font-size: 20px;
+}
+
+p:empty { /*5j*/
+	display: none;
+}
+
+.mainContent article{ /*5k*/
+    text-shadow: #6374AB 20px -12px 2px; 
+}
+
+.mainContent header { /*5l*/
+-webkit-transform: rotate(-2deg); 
+-moz-transform: rotate(-2deg);
+transform: rotate(-2deg);	
+}
